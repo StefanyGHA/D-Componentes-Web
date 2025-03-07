@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>Catálogo Camille</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function mostrarCategoria(categoria) {
+      const productos = document.querySelectorAll('.producto');
+      productos.forEach(producto => {
+        if (categoria === 'todos' || producto.classList.contains(categoria)) {
+          producto.style.display = 'block';
+        } else {
+          producto.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="text-center bg-purple-300 p-10">
+    <h1 class="text-4xl font-bold">Catálogo Camille</h1>
+    <nav class="mt-4">
+      <button onclick="mostrarCategoria('todos')" class="bg-purple-500 text-white px-4 py-2 rounded m-2 hover:bg-purple-700">Todos</button>
+      <button onclick="mostrarCategoria('bolsos')" class="bg-purple-500 text-white px-4 py-2 rounded m-2 hover:bg-purple-700">Bolsos</button>
+      <button onclick="mostrarCategoria('accesorios')" class="bg-purple-500 text-white px-4 py-2 rounded m-2 hover:bg-purple-700">Accesorios</button>
+      <button onclick="mostrarCategoria('calzado')" class="bg-purple-500 text-white px-4 py-2 rounded m-2 hover:bg-purple-700">Calzado</button>
+      <button onclick="window.history.back()" class="bg-purple-500 text-white px-4 py-2 rounded m-2 hover:bg-purple-700">Inicio</button>
+
+    </nav>
+  </header>
+
+  <main class="p-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="producto bolsos bg-white p-4 shadow-lg rounded-lg text-center">
+      <img src="img/bolso.jpg" alt="Bolso" class="mx-auto w-48 rounded-lg">
+      <h3 class="text-xl font-semibold mt-4">Bolso</h3>
+    </div>
+    <div class="producto accesorios bg-white p-4 shadow-lg rounded-lg text-center">
+      <img src="img/collar.jpg" alt="Accesorios" class="mx-auto w-48 rounded-lg">
+      <h3 class="text-xl font-semibold mt-4">Accesorios</h3>
+    </div>
+    <div class="producto calzado bg-white p-4 shadow-lg rounded-lg text-center">
+      <img src="img/zara.jpg" alt="Calzado" class="mx-auto w-48 rounded-lg">
+      <h3 class="text-xl font-semibold mt-4">Calzado</h3>
+    </div>
+  </main>
+ <!-- ASIDE -->
+ <aside class="bg-purple-200 p-10 text-center">
+    <h2 class="text-3xl font-semibold">Eventos Próximos</h2>
+    <ul class="list-none mt-4">
+      <li>15 de Abril - Lanzamiento de nueva colección</li>
+      <li>30 de Abril - Desfile de moda virtual</li>
+    </ul>
+    <h2 class="text-3xl font-semibold mt-6">Ofertas Especiales</h2>
+    <p class="mt-4">¡Descuentos de hasta el 30% en productos seleccionados!</p>
+  </aside>
+
+  <footer class="bg-gray-900 text-white text-center p-6 mt-6">
+    <p>Dirección: Avenida Norte, Ciudad de San Miguel</p>
+    <p>Teléfono: +503 1234-5678</p>
+    <p>Email: contacto@camille.com</p>
+    <p>
+      Síguenos en:
+      <a href="#" class="text-blue-400 hover:underline">Facebook</a> |
+      <a href="#" class="text-pink-400 hover:underline">Instagram</a> |
+      <a href="#" class="text-blue-300 hover:underline">Twitter</a>
+    </p>
+    <p>&copy; 2025 Camille. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
