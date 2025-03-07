@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Moda Camille</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- HEADER -->
+  <header class="text-center bg-cover bg-center p-6" style="background-image:url(https://i.pinimg.com/736x/b1/78/bb/b178bb5e8080db1a2f46051f010a25a9.jpg);">
+    <h1 class="text-4xl font-bold text-black">Tienda Online Camille</h1>
+    <img src="img/logomorado.png" alt="Logo" class="mx-auto w-48 h-48">
+    <p class="text-lg text-black">Moda, estilo y elegancia</p>
+  </header>
+
+   <!-- NAV -->
+   <nav class="bg-gray-800 text-white text-center p-4">
+    <a href="http://127.0.0.1:5500/src/index2.html" class="mx-4 hover:text-purple-500">Inicio</a>
+    <a href="catalogo.html" class="mx-4 hover:text-purple-500">Catálogo</a>
+    <a href="ofertas.html" class="mx-4 hover:text-purple-500">Ofertas</a>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="p-6">
+    <section class="text-center">
+      <h2 class="text-2xl font-bold">Sobre Nosotros</h2>
+      <p class="mt-2">Bienvenidos a <strong>Tienda de Moda Camille</strong>, tu destino en línea para descubrir las últimas tendencias, colecciones exclusivas y accesorios únicos que realzan tu estilo.</p>
+    </section>
+
+    <!-- Sección Galería -->
+    <section class="text-center mt-6">
+      <h2 class="text-2xl font-bold">Galería</h2>
+      <div class="flex justify-center gap-4 mt-4">
+        <img src="img/collar.jpg" alt="Producto 1" class="w-48 h-48 rounded shadow">
+        <img src="img/bolso.jpg" alt="Producto 2" class="w-48 h-48 rounded shadow">
+        <img src="img/zara.jpg" alt="Producto 3" class="w-48 h-48 rounded shadow">
+      </div>
+    </section>
+
+    <!-- Sección Registro -->
+    <section class="text-center mt-6">
+      <h2 class="text-2xl font-bold">Regístrate</h2>
+      <p class="mt-2">¡Para que te enteres de todas las novedades de la tienda!</p>
+      <form class="mt-4 bg-white p-4 shadow-md rounded w-1/3 mx-auto">
+        <label for="nombre" class="block text-left">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="w-full border p-2 rounded" required>
+        <label for="email" class="block text-left mt-2">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" class="w-full border p-2 rounded" required>
+        <input type="submit" value="Registrar" class="mt-4 bg-purple-600 text-white py-2 px-4 rounded cursor-pointer hover:bg-purple-700">
+      </form>
+    </section>
+  </main>
+
+ <!-- ASIDE -->
+ <aside class="bg-purple-200 p-10 text-center">
+  <h2 class="text-3xl font-semibold">Eventos Próximos</h2>
+  <ul class="list-none mt-4">
+    <li>15 de Abril - Lanzamiento de nueva colección</li>
+    <li>30 de Abril - Desfile de moda virtual</li>
+  </ul>
+  <h2 class="text-3xl font-semibold mt-6">Ofertas Especiales</h2>
+  <p class="mt-4">¡Descuentos de hasta el 30% en productos seleccionados!</p>
+</aside>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center p-6 mt-6">
+    <p>Dirección: Avenida Norte, Ciudad de San Miguel</p>
+    <p>Teléfono: +503 1234-5678</p>
+    <p>Email: contacto@camille.com</p>
+    <p>
+      Síguenos en:
+      <a href="#" class="text-blue-400 hover:underline">Facebook</a> |
+      <a href="#" class="text-pink-400 hover:underline">Instagram</a> |
+      <a href="#" class="text-blue-300 hover:underline">Twitter</a>
+    </p>
+    <p>&copy; 2025 Camille. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
